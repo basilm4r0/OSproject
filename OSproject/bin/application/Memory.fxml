@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="566.0" prefWidth="780.0" style="-fx-background-color: #2D4263;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MemoryController">
+   <children>
+      <Button fx:id="back_button" layoutX="560.0" layoutY="522.0" mnemonicParsing="false" onAction="#back_to_main" prefHeight="26.0" prefWidth="120.0" style="-fx-background-radius: 10; -fx-background-color: #5e81ac;" text="Back to Main" textFill="WHITE" />
+      <TableView fx:id="memory_table" layoutX="93.0" layoutY="79.0" prefHeight="423.0" prefWidth="587.0" style="-fx-background-color: #e5e9f0; -fx-border-color: #5e81ac;">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="143.1999740600586" text="Process Name" />
+          <TableColumn fx:id="id" minWidth="7.20001220703125" prefWidth="137.5999755859375" text="Process ID" />
+            <TableColumn fx:id="frame" prefWidth="125.60003662109375" text="Frame Number" />
+            <TableColumn fx:id="valid" prefWidth="87.20004272460938" text="Valid" />
+            <TableColumn fx:id="dirty" prefWidth="89.60003662109375" text="Dirty" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
